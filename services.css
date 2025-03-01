@@ -1,0 +1,132 @@
+/* General Reset */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+/* Header */
+header {
+    background-color: #222;
+    color: #f4a64c;
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* Services Section */
+.services {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #2c2c2c;
+    margin: 20px auto;
+    max-width: 1200px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(255, 165, 0, 0.2);
+}
+
+.services h2 {
+    font-size: 36px;
+    color: #f4a64c;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    border-bottom: 3px solid #f4a64c;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.service-item {
+    background-color: #3a3a3a;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+    box-shadow: 0 4px 6px rgba(255, 165, 0, 0.1);
+    transition: transform 0.3s, background-color 0.3s;
+    position: relative;
+}
+
+.service-item:hover {
+    transform: translateY(-10px);
+    background-color: #444;
+    cursor: pointer;
+}
+
+.service-item i {
+    font-size: 50px;
+    color: #f4a64c;
+    margin-bottom: 15px;
+    transition: color 0.3s;
+    cursor: pointer;
+}
+
+.service-item:hover i {
+    color: #ffb366;
+}
+
+.service-item h3 {
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.service-item p {
+    font-size: 14px;
+    color: #bbb;
+    line-height: 1.6;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: #f4a64c;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+footer .social-icons a {
+    color: #f4a64c;
+    margin: 0 10px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+footer .social-icons a:hover {
+    color: #ffb366;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .services-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .service-item {
+        max-width: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    .services-container {
+        grid-template-columns: 1fr;
+    }
+
+    .service-item {
+        max-width: 100%;
+    }
+}
